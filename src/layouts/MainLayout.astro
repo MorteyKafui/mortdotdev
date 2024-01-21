@@ -60,7 +60,9 @@ const { title = "Mortdodev | Home" } = Astro.props;
         }
       });
 
-      document.addEventListener("click", scrollToTop);
+      document
+        .querySelector(".scroll-to-top")!
+        .addEventListener("click", scrollToTop);
     </script>
     <style>
       .scroll-to-top {
