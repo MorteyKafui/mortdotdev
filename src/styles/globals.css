@@ -100,10 +100,24 @@ html {
   scroll-behavior: smooth;
 }
 
-/* h2 {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #ddd8c2;
-  text-decoration-thickness: 5px;
-  text-decoration-skip-ink: none;
-} */
+body {
+  --sb-track-color: #232e33;
+  --sb-thumb-color: #f4c520;
+  --sb-size: 10px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+}
