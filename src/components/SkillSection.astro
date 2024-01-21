@@ -2,10 +2,10 @@
 import AccordionTabs from "./AccordionTabs";
 ---
 
-<section class="bg-darkColorSecondary text-lightColor">
+<section id="skills" class="bg-darkColorSecondary text-lightColor">
   <div class="max-w-5xl container mx-auto px-10 py-10">
     <h2 class="text-6xl text-gradient font-bold text-center">my skills</h2>
-    <h3 class="text-3xl text-yellowColor font-bold italic mt-10">
+    <h3 class="line text-3xl text-yellowColor font-bold italic mt-10">
       technical skills:
     </h3>
     <p class="mt-5 mb-8 text-xl lg:text-2xl">
@@ -15,11 +15,13 @@ import AccordionTabs from "./AccordionTabs";
     </p>
     <AccordionTabs client:visible />
     <div class="my-8 text-greenColor text-2xl text-center">
-      <small>Phew! This is a lot...😂 You know, learning never stop....😊</small
+      <small
+        >Phew!!! Okay!!! Okay!!! That's all for now...😂 You know, learning
+        never stop....😊</small
       >
     </div>
     <h3 class="text-4xl">...and oh one more thing...🤣</h3>
-    <h3 class="text-3xl text-yellowColor font-bold italic mt-10">
+    <h3 class="line text-3xl text-yellowColor font-bold italic mt-10">
       soft skills:
     </h3>
     <article
@@ -36,6 +38,7 @@ import AccordionTabs from "./AccordionTabs";
 </section>
 
 <style>
+  #skills .line,
   p span {
     text-decoration-line: underline;
     text-decoration-style: solid;
