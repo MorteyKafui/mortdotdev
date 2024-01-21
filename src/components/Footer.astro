@@ -1,0 +1,44 @@
+<footer class="bg-darkColorPrimary text-lightColor text-xl">
+  <div
+    class="max-w-5xl container mx-auto px-10 py-8 flex flex-col lg:flex-row justify-between items-center gap-10"
+  >
+    <a
+      class="font-bold text-gradient text-xl inline-block hover:scale-110 transition-all duration-700"
+      href="/">mortdotdev</a
+    >
+    <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+      <p>copyright &copy; {new Date().getFullYear()}</p>
+
+      <time class="text-center text-sm" datetime=""></time>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer a {
+    font-family: "Pacifico", cursive;
+  }
+</style>
+
+<script>
+  const displayCurrentDateTime = () => {
+    const options: Intl.DateTimeFormatOptions = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+    };
+
+    const userLocale = navigator.language || "en-US";
+    const formattedDateTime = new Date().toLocaleString(userLocale, options);
+
+    document.querySelector("time")!.textContent = formattedDateTime;
+  };
+
+  setInterval(displayCurrentDateTime, 1000);
+
+  displayCurrentDateTime();
+</script>
