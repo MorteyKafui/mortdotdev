@@ -13,12 +13,22 @@ const allBlogPosts: CollectionEntry<"blog">[] = (
 ---
 
 <MainLayout>
-  <section class="bg-darkColorPrimary text-slate-200">
+  <section id="blog" class="bg-darkColorPrimary text-slate-200">
     <div class="max-w-5xl mx-auto container px-10 py-10">
-      <h1 class="text-5xl">All Posts</h1>
+      <h1 class="text-5xl text-yellowColor">All Posts</h1>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {allBlogPosts.map(post => <BlogCard post={post} />)}
       </div>
     </div>
   </section>
 </MainLayout>
+
+<style>
+  #blog h1 {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #cf5c36;
+    text-decoration-thickness: 10px;
+    text-decoration-skip-ink: none;
+  }
+</style>

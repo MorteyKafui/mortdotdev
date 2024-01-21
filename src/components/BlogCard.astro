@@ -24,7 +24,7 @@ interface Props {
   >
     <a href={`/blog/${post.slug}`}>{post.data.title}</a>
   </h3>
-  <small>{formatDate(post.data.pubDate)}</small>
+  <small class="mt-2">{formatDate(post.data.pubDate)}</small>
   <p class="text-lg mt-4">{post.data.description}</p>
   <a
     class="mt-4 text-xl hover:text-yellowColor hover:scale-y-110 transition-all duration-200"
