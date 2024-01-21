@@ -1,0 +1,46 @@
+---
+import AccordionTabs from "./AccordionTabs";
+---
+
+<section class="bg-darkColorSecondary text-lightColor">
+  <div class="max-w-5xl container mx-auto px-10 py-10">
+    <h2 class="text-6xl text-gradient font-bold text-center">my tools</h2>
+    <h3 class="text-3xl text-yellowColor font-bold italic mt-10">
+      technical skills:
+    </h3>
+    <p class="mt-5 mb-8 text-xl lg:text-2xl">
+      Armed with a <span>robust skill set,</span> I excel in developing responsive
+      and visually stunning web applications. <br /> Here's a snapshot of the key
+      tools and technologies in my arsenal:
+    </p>
+    <AccordionTabs client:visible />
+    <div class="my-8 text-greenColor text-2xl text-center">
+      <small>Phew! This is a lot...😂 You know, learning never stop....😊</small
+      >
+    </div>
+    <h3 class="text-4xl">...and oh one more thing...🤣</h3>
+    <h3 class="text-3xl text-yellowColor font-bold italic mt-10">
+      soft skills:
+    </h3>
+    <article
+      class="text-slate-200 grid grid-cols-1 lg:grid-cols-3 gap-8 my-10 font-bold italic text-2xl tracking-wider"
+    >
+      <h3>Effective Communication</h3>
+      <h3>Collaboration</h3>
+      <h3>Problem-Solving</h3>
+      <h3>Critical Thinking</h3>
+      <h3>Continuous Learning</h3>
+      <h3>Time Management</h3>
+    </article>
+  </div>
+</section>
+
+<style>
+  p span {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #cf5c36;
+    text-decoration-thickness: 5px;
+    text-decoration-skip-ink: none;
+  }
+</style>
