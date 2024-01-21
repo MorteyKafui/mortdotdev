@@ -78,7 +78,7 @@
 /* font-family: 'Bubblegum Sans', sans-serif;
 font-family: 'Pacifico', cursive; */
 .text-gradient {
-  background: linear-gradient(180deg, #f1b90c 0%, #cf5c36 100%);
+  background: linear-gradient(-265deg, #f1b90c 40%, #cf5c36 60%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -86,7 +86,7 @@ font-family: 'Pacifico', cursive; */
 
 .btn-gradient {
   border-radius: 6.25rem;
-  background: linear-gradient(258deg, #f4c520 33.53%, #cf5c36 58.62%);
+  background: linear-gradient(-258deg, #f4c520 33.53%, #cf5c36 58.62%);
 }
 
 .img-styles {

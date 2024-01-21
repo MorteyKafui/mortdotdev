@@ -19,6 +19,7 @@ export default {
         darkColorTertiary: "#1D2B35",
         yellowColor: "#F4C520",
         orangeColor: "#CF5C36",
+        greenColor: "#7DC41D",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
