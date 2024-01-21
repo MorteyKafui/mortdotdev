@@ -1,0 +1,80 @@
+<header class="bg-darkColorPrimary text-lightColor lg:text-3xl">
+  <div
+    class="max-w-5xl container mx-auto px-10 py-4 flex justify-center lg:justify-between gap-10 items-center h-[100vh] flex-col lg:flex-row"
+  >
+    <div
+      class="flex flex-col items-center gap-7 lg:gap-10 order-1 lg:order-none text-center"
+    >
+      <h1 class="text-5xl lg:text-9xl">
+        hi there!,<br /> i&apos;m <span
+          class="text-yellowColor tracking-wider italic">Kafui,</span
+        >
+      </h1>
+      <p>
+        a <span class="text-yellowColor tracking-wider italic"
+          >self-taught frontend developer</span
+        > based in Ghana.
+      </p>
+      <div class="btns flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
+        <a
+          class="px-10 py-3 text-darkColorSecondary font-bold hover:scale-110 transition-all duration-700 flex items-center gap-4 justify-between"
+          href="https://www.youtube.com"
+          target="_blank"
+        >
+          <img
+            class="w-5 h-5 lg:w-8 lg:h-8"
+            src="/assets/icons/youtube-icon.svg"
+            alt="github icon"
+          />
+          <span class="text-2xl">free tutorials</span></a
+        >
+        <a
+          class="px-10 py-3 text-darkColorSecondary font-bold hover:scale-110 transition-all duration-700 flex items-center text-center gap-4 justify-between"
+          href="https://www.github.com"
+          target="_blank"
+        >
+          <img
+            class="w-5 h-5 lg:w-8 lg:h-8"
+            src="/assets/icons/github-icon.svg"
+            alt="github icon"
+          />
+          <span class="text-2xl">github repo</span></a
+        >
+      </div>
+    </div>
+    <div class="profile-pic">
+      <img
+        class="w-48 h-auto lg:w-80 lg:h-auto my-10 lg:my-0"
+        src="/assets/images/mk.jpg"
+        alt="Mortdotdev profile picture"
+      />
+    </div>
+  </div>
+</header>
+
+<style>
+  h1 span,
+  p span {
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(207, 93, 54, 1);
+    text-decoration-thickness: 8px;
+    text-decoration-skip-ink: none;
+  }
+
+  .btns a {
+    border-radius: 6.25rem;
+    background: linear-gradient(-210deg, #d8b828 30%, #cf5c36 65%);
+  }
+
+  .profile-pic img {
+    /* width: 20rem;
+    height: 20rem; */
+    transform: rotate(-15deg);
+    border-radius: 50px;
+    border: 5px solid #ffb514;
+    -webkit-box-shadow: 0px 0px 100px 40px rgba(255, 181, 20, 0.3);
+    -moz-box-shadow: 0px 0px 100px 40px rgba(255, 181, 20, 0.3);
+    box-shadow: 0px 0px 100px 40px rgba(255, 181, 20, 0.3);
+  }
+</style>
