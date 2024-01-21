@@ -96,6 +96,10 @@ font-family: 'Pacifico', cursive; */
   box-shadow: 46px 20px 5.6px 8px rgba(0, 0, 0, 0.25);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* h2 {
   text-decoration-line: underline;
   text-decoration-style: wavy;
