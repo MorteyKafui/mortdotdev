@@ -32,7 +32,7 @@ const { Content } = await entry.render();
       <span>{formatDate(entry.data.pubDate)}</span> &mdash; <span
         >{entry.data.author}</span
       >
-      <div class="my-16">
+      <div class="my-16 tracking-wider">
         <Content />
       </div>
     </div>
@@ -40,7 +40,9 @@ const { Content } = await entry.render();
 </MainLayout>
 
 <style is:global>
+  h2,
   p {
     font-size: 20px;
+    margin-top: 10px;
   }
 </style>
