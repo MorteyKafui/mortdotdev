@@ -84,7 +84,7 @@ font-family: 'Pacifico', cursive; */
   -webkit-text-fill-color: transparent;
 }
 
-.bg-gradient {
+.btn-gradient {
   border-radius: 6.25rem;
   background: linear-gradient(258deg, #f4c520 33.53%, #cf5c36 58.62%);
 }

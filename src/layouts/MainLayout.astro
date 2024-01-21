@@ -1,5 +1,7 @@
 ---
+import Navbar from "@/components/Navbar.astro";
 import "/src/styles/globals.css";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <html lang="en">
@@ -17,9 +19,11 @@ import "/src/styles/globals.css";
       rel="stylesheet"
     />
     <title>Mortdotdev</title>
+    <ViewTransitions />
   </head>
   <body>
     <main>
+      <Navbar />
       <slot />
     </main>
   </body>

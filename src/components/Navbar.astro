@@ -1,0 +1,42 @@
+---
+import MobileNav from "./MobileNav";
+
+export const menuItems = [
+  { label: "home", url: "/" },
+  { label: "about", url: "#about" },
+  { label: "contact", url: "#contact" },
+  { label: "blog", url: "/blog" },
+];
+---
+
+<nav
+  class="bg-darkColorPrimary text-lightColor text-3xl border-b-2 border-yellowColor"
+>
+  <div
+    class="max-w-5xl container mx-auto px-8 py-5 flex justify-between items-center gap-10"
+  >
+    <h1
+      class="font-bold text-4xl text-gradient hover:scale-110 transition-all duration-700"
+    >
+      <a href="/">mortdotdev</a>
+    </h1>
+    <ul class="lg:flex gap-10 hidden">
+      {
+        menuItems.map(({ label, url }) => (
+          <li class=" hover:text-yellowColor transition-all duration-500 hover:scale-125">
+            <a href={url}>{label}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="lg:hidden">
+      <MobileNav client:load />
+    </div>
+  </div>
+</nav>
+
+<style>
+  h1 {
+    font-family: "Pacifico", cursive;
+  }
+</style>
