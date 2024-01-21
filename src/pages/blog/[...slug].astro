@@ -1,0 +1,46 @@
+---
+import { formatDate } from "@/components/BlogCard.astro";
+import MainLayout from "@/layouts/MainLayout.astro";
+import { getEntry } from "astro:content";
+
+const { slug } = Astro.params;
+
+if (slug === undefined) {
+  throw new Error("Slug is required");
+}
+
+const entry = await getEntry("blog", slug);
+
+if (entry === undefined) {
+  return Astro.redirect("/404");
+}
+
+const { Content } = await entry.render();
+---
+
+<MainLayout>
+  <article class="bg-darkColorPrimary text-slate-200">
+    <div class="max-w-4xl mx-auto px-10 py-8">
+      <a
+        class="border-2 border-orangeColor hover:scale-110 inline-block transition-all duration-500 px-5 py-2 rounded-lg bg-yellowColor text-darkColorPrimary font-bold text-lg"
+        href="/blog">Go Back</a
+      >
+      <h1 class="text-xl lg:text-4xl mt-12 text-yellowColor">
+        {entry.data.title}
+      </h1>
+      <small class="italic inline-block text-lg mb-10"></small>
+      <span>{formatDate(entry.data.pubDate)}</span> &mdash; <span
+        >{entry.data.author}</span
+      >
+      <div class="my-16">
+        <Content />
+      </div>
+    </div>
+  </article>
+</MainLayout>
+
+<style is:global>
+  p {
+    font-size: 20px;
+  }
+</style>
