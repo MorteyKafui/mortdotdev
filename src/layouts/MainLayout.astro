@@ -3,12 +3,14 @@ import Navbar from "@/components/Navbar.astro";
 import "/src/styles/globals.css";
 import { ViewTransitions } from "astro:transitions";
 import Footer from "@/components/Footer.astro";
+
+const { title = "Mortdodev | Home" } = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +21,13 @@ import Footer from "@/components/Footer.astro";
       href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <title>Mortdotdev</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>{title}</title>
     <ViewTransitions />
   </head>
   <body>
@@ -54,24 +62,25 @@ import Footer from "@/components/Footer.astro";
 
       document.addEventListener("click", scrollToTop);
     </script>
-  </body><style>
-    .scroll-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #cf5c36; /* Button background color */
-      color: #2d2928; /* Button text color */
-      border: none;
-      border-radius: 100%;
-      padding: 10px;
-      cursor: pointer;
-      font-size: 20px;
-      transition: all 0.2s ease-in;
-      display: none;
-    }
+    <style>
+      .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #cf5c36; /* Button background color */
+        color: #2d2928; /* Button text color */
+        border: none;
+        border-radius: 100%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: all 0.2s ease-in;
+        display: none;
+      }
 
-    #scrollToTopBtn:hover {
-      background-color: #ffb514; /* Button background color on hover */
-    }
-  </style>
+      #scrollToTopBtn:hover {
+        background-color: #ffb514; /* Button background color on hover */
+      }
+    </style>
+  </body>
 </html>

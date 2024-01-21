@@ -18,7 +18,7 @@ if (entry === undefined) {
 const { Content } = await entry.render();
 ---
 
-<MainLayout>
+<MainLayout title={`Mortdodev | ${entry.data.title}`}>
   <article class="bg-darkColorPrimary text-slate-200">
     <div class="max-w-4xl mx-auto px-10 py-8">
       <a
