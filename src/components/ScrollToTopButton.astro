@@ -1,0 +1,46 @@
+<button class="scroll-to-top">
+  <span>&#9650;</span>
+</button>
+
+<style>
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #cf5c36; /* Button background color */
+    color: #2d2928; /* Button text color */
+    border: none;
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.2s ease-in;
+    display: none;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: #ffb514; /* Button background color on hover */
+  }
+</style>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  const scrollButton =
+    document.querySelector<HTMLButtonElement>(".scroll-to-top")!;
+
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollButton.style.display = "block";
+    } else {
+      scrollButton.style.display = "none";
+    }
+  });
+
+  scrollButton.addEventListener("click", scrollToTop);
+</script>

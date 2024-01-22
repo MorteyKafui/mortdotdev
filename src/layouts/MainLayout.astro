@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar.astro";
 import "/src/styles/globals.css";
 import { ViewTransitions } from "astro:transitions";
 import Footer from "@/components/Footer.astro";
+import ScrollToTopButton from "@/components/ScrollToTopButton.astro";
 
 const { title = "Mortdodev | Home" } = Astro.props;
 ---
@@ -35,54 +36,7 @@ const { title = "Mortdodev | Home" } = Astro.props;
       <Navbar />
       <slot />
       <Footer />
-
-      <button class="scroll-to-top">
-        <span>&#9650;</span>
-      </button>
     </main>
-
-    <script>
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
-
-      document.addEventListener("scroll", () => {
-        const scrollButton =
-          document.querySelector<HTMLButtonElement>(".scroll-to-top")!;
-
-        if (window.scrollY > 300) {
-          scrollButton.style.display = "block";
-        } else {
-          scrollButton.style.display = "none";
-        }
-      });
-
-      document
-        .querySelector(".scroll-to-top")!
-        .addEventListener("click", scrollToTop);
-    </script>
-    <style>
-      .scroll-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #cf5c36; /* Button background color */
-        color: #2d2928; /* Button text color */
-        border: none;
-        border-radius: 100%;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 20px;
-        transition: all 0.2s ease-in;
-        display: none;
-      }
-
-      #scrollToTopBtn:hover {
-        background-color: #ffb514; /* Button background color on hover */
-      }
-    </style>
+    <ScrollToTopButton />
   </body>
 </html>
