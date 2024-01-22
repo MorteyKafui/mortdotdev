@@ -3,6 +3,7 @@ import BlogCard from "@/components/BlogCard.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
+import ScrollToTopButton from "@/components/ScrollToTopButton.astro";
 
 const allBlogPosts: CollectionEntry<"blog">[] = (
   await getCollection("blog")
@@ -21,6 +22,7 @@ const allBlogPosts: CollectionEntry<"blog">[] = (
       </div>
     </div>
   </section>
+  <ScrollToTopButton/>
 </MainLayout>
 
 <style>

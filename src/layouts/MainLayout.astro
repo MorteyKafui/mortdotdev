@@ -1,9 +1,8 @@
 ---
-import Navbar from "@/components/Navbar.astro";
-import "/src/styles/globals.css";
-import { ViewTransitions } from "astro:transitions";
 import Footer from "@/components/Footer.astro";
-import ScrollToTopButton from "@/components/ScrollToTopButton.astro";
+import Navbar from "@/components/Navbar.astro";
+import { ViewTransitions } from "astro:transitions";
+import "@/styles/globals.css";
 
 const { title = "Mortdodev | Home" } = Astro.props;
 ---
@@ -37,6 +36,5 @@ const { title = "Mortdodev | Home" } = Astro.props;
       <slot />
       <Footer />
     </main>
-    <ScrollToTopButton />
   </body>
 </html>

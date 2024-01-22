@@ -5,12 +5,12 @@
 <style>
   .scroll-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 50px;
     background-color: #cf5c36; /* Button background color */
     color: #2d2928; /* Button text color */
     border: none;
-    border-radius: 100%;
+    border-radius: 50%;
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
@@ -18,21 +18,22 @@
     display: none;
   }
 
-  #scrollToTopBtn:hover {
+  .scroll-to-top:hover {
     background-color: #ffb514; /* Button background color on hover */
   }
 </style>
 
 <script>
-  function scrollToTop() {
-    window.scrollTo({
+  const rootElement = document.documentElement;
+  const scrollButton =
+    document.querySelector<HTMLButtonElement>(".scroll-to-top")!;
+
+  const scrollToTop = () => {
+    rootElement.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  }
-
-  const scrollButton =
-    document.querySelector<HTMLButtonElement>(".scroll-to-top")!;
+  };
 
   document.addEventListener("scroll", () => {
     if (window.scrollY > 300) {

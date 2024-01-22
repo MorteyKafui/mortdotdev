@@ -1,5 +1,6 @@
 ---
 import { formatDate } from "@/components/BlogCard.astro";
+import ScrollToTopButton from "@/components/ScrollToTopButton.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
 import { getEntry } from "astro:content";
 
@@ -37,6 +38,7 @@ const { Content } = await entry.render();
       </div>
     </div>
   </article>
+  <ScrollToTopButton />
 </MainLayout>
 
 <style is:global>
