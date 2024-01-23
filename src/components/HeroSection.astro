@@ -17,7 +17,7 @@
       </p>
       <div class="btns flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
         <a
-          class="px-10 py-3 text-darkColorSecondary font-bold hover:scale-110 transition-all duration-700 flex items-center gap-4 justify-between"
+          class="px-4 py-2 lg:px-10 lg:py-3 text-darkColorSecondary font-bold hover:scale-110 transition-all duration-700 flex items-center gap-4 justify-between"
           href="https://www.youtube.com/@mortdotdev"
           target="_blank"
         >
@@ -26,10 +26,10 @@
             src="/assets/icons/youtube-icon.svg"
             alt="github icon"
           />
-          <span class="text-2xl">free tutorials</span></a
+          <span class="text-lg">free tutorials</span></a
         >
         <a
-          class="px-10 py-3 text-darkColorSecondary font-bold hover:scale-110 transition-all duration-700 flex items-center text-center gap-4 justify-between"
+          class="px-4 py-2 lg:px-8 lg:py-2 text-darkColorSecondary font-bold hover:scale-110 transition-all duration-700 flex items-center text-center gap-4 justify-between"
           href="https://github.com/MorteyKafui"
           target="_blank"
         >
@@ -38,7 +38,7 @@
             src="/assets/icons/github-icon.svg"
             alt="github icon"
           />
-          <span class="text-2xl">github repo</span></a
+          <span class="text-lg">github repo</span></a
         >
       </div>
     </div>
@@ -73,7 +73,7 @@
     border: 5px solid #ffb514;
     -webkit-box-shadow: 0px 0px 100px 40px rgba(255, 181, 20, 0.3);
     -moz-box-shadow: 0px 0px 100px 40px rgba(255, 181, 20, 0.3);
-    box-shadow: 0px 0px 100px 40px rgba(255, 181, 20, 0.3);
+    /* box-shadow: 0px 0px 100px 40px rgba(255, 181, 20, 0.3); */
   }
 </style>
 
@@ -90,19 +90,19 @@
 
   tl.from("header h1", {
     opacity: 0,
-    xPercent: -100,
+    YPercent: 100,
     scale: 1.2,
     stagger: 0.1,
   })
     .from("header p", {
       opacity: 0,
-      yPercent: 100,
+      yPercent: 120,
       scale: 1.2,
       stagger: 0.1,
     })
     .from("header .btns", {
       opacity: 0,
-      yPercent: 200,
+      yPercent: 140,
     })
     .from(
       "header .profile-pic img",
