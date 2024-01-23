@@ -27,7 +27,7 @@ import AccordionTabs from "./AccordionTabs";
       soft skills:
     </h3>
     <article
-      class="text-slate-200 grid grid-cols-1 lg:grid-cols-3 gap-8 my-10 font-bold italic text-2xl tracking-wider"
+      class="article text-slate-200 grid grid-cols-1 lg:grid-cols-3 gap-8 my-10 font-bold italic text-2xl tracking-wider"
     >
       <h3>Effective Communication</h3>
       <h3>Collaboration</h3>
@@ -56,3 +56,48 @@ import AccordionTabs from "./AccordionTabs";
     text-decoration-skip-ink: none;
   }
 </style>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ["#skills h2", "#skills p", "#skills h3"],
+      start: "top center",
+      end: "bottom top",
+      toggleActions: "play none play reverse",
+    },
+    defaults: { ease: "power3.inOut", duration: 1, yoyo: true },
+  });
+
+  tl.from(["#skills h2", "#skills p", "#skills h3"], {
+    opacity: 0,
+    yPercent: 100,
+    stagger: 0.1,
+  });
+
+  gsap.to("small", {
+    color: "#F4C520",
+    textDecoration: "underline",
+    textDecorationColor: "#F4C520",
+    duration: 1.5,
+    repeat: -1,
+  });
+
+  const tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".article",
+      toggleActions: "play none play reverse",
+    },
+    defaults: { duration: 1, ease: "elastic", yoyo: true },
+  });
+
+  tl2.fromTo(
+    ".article h3",
+    { yPercent: 120, opacity: 0 },
+    { opacity: 1, stagger: 0.02, yPercent: 0 }
+  );
+</script>

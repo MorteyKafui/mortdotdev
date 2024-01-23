@@ -95,3 +95,26 @@
     text-decoration-skip-ink: none;
   }
 </style>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#contact",
+      start: "top center",
+      end: "bottom top",
+      toggleActions: "play none play reverse",
+    },
+    defaults: { ease: "back", duration: 1, yoyo: true },
+  });
+
+  tl.from(["#contact h2", "#contact p", "#contact h3"], {
+    opacity: 0,
+    yPercent: 100,
+    stagger: 0.2,
+  })
+</script>

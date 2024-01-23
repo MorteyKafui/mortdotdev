@@ -1,4 +1,4 @@
-<section id="about" class="bg-darkColorSecondary text-lightColor">
+<section id="about" class="about bg-darkColorSecondary text-lightColor">
   <div class="max-w-5xl container mx-auto px-10 py-10">
     <h2 class="text-6xl text-gradient font-bold text-center">about me</h2>
     <div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16">
@@ -59,3 +59,33 @@
     text-decoration-skip-ink: none;
   }
 </style>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#about",
+      start: "top center",
+      end: "bottom top",
+      toggleActions: "play none play reverse",
+    },
+    defaults: { ease: "back", duration: 1, yoyo: true },
+  });
+
+  tl.from(["#about h2", "#about p", "#about h3", "#about blockquote"], {
+    opacity: 0,
+    yPercent: 100,
+    stagger: 0.02,
+  }).from(
+    "#about blockquote",
+    {
+      scale: 1.2,
+      delay: 1,
+    },
+    "<"
+  );
+</script>

@@ -54,3 +54,31 @@
     text-decoration-skip-ink: none;
   }
 </style>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#tech-stack",
+      start: "top center",
+      end: "bottom top",
+      toggleActions: "play reverse play reverse",
+    },
+    defaults: { ease: "back", duration: 1, yoyo: true },
+  });
+
+  tl.from(["#tech-stack h2", "#tech-stack p", "#tech-stack h3"], {
+    opacity: 0,
+    yPercent: 100,
+    stagger: 0.2,
+  }).fromTo(
+    "#tech-stack ul li",
+    { yPercent: 100, opacity: 0 },
+    { opacity: 1, stagger: 0.1, color: "#F4C520", yPercent: 0 },
+    "<"
+  );
+</script>
