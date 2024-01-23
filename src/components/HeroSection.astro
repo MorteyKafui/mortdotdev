@@ -83,7 +83,7 @@
   const tl = gsap.timeline({
     defaults: {
       yoyo: true,
-      ease: "circ.inOut",
+      ease: "back",
       duration: 1,
     },
   });
@@ -104,9 +104,5 @@
       opacity: 0,
       yPercent: 140,
     })
-    .from(
-      "header .profile-pic img",
-      { ease: "back", duration: 1.2, stagger: 0.01, scale: 2 },
-      "-=3"
-    );
+    .from("header .profile-pic img", { duration: 1.5, scale: 2 }, "-=3");
 </script>
