@@ -26,7 +26,7 @@
             src="/assets/icons/youtube-icon.svg"
             alt="github icon"
           />
-          <span class="text-2xl">tutorials</span></a
+          <span class="text-lg lg:text-2xl">tutorials</span></a
         >
         <a
           class="px-4 py-2 lg:px-8 lg:py-2 text-darkColorSecondary font-bold hover:scale-110 transition-all duration-700 flex items-center text-center gap-4 justify-between"
@@ -38,7 +38,7 @@
             src="/assets/icons/github-icon.svg"
             alt="github icon"
           />
-          <span class="text-2xl">github</span></a
+          <span class="text-lg lg:text-2xl">github</span></a
         >
       </div>
     </div>
@@ -92,11 +92,7 @@
     opacity: 0,
     xPercent: -100,
   })
-    .from(
-      "header .profile-pic img",
-      { opacity: 0, scale: 1.2, duration: 2 },
-      "<"
-    )
+    .from("header .profile-pic img", { opacity: 0, x: 100, duration: 2 }, "<")
     .from("header p", {
       opacity: 0,
       yPercent: 100,
