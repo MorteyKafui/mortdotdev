@@ -10,10 +10,12 @@ const AccordionTabs = () => {
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">HTML</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            HTML
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             The backbone of the web, HTML uses tags to structure content,
             enabling standardized and accessible web pages. It dictates visual
             layout and logical structure, ensuring consistency across browsers
@@ -23,10 +25,10 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-2">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">CSS</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">CSS</h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             CSS enhances web pages by styling HTML elements, providing design
             consistency and responsiveness. Through selectors and rules, it
             enables the separation of content and presentation, ensuring a
@@ -36,10 +38,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">JAVASCRIPT</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            JavaScript
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             As a versatile scripting language, JavaScript adds interactivity and
             dynamic behavior to web pages, enabling client-side functionality.
           </p>
@@ -47,10 +51,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-4">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">TYPESCRIPT</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Typescript
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             TypeScript, a superset of JavaScript, introduces static typing to
             enhance code reliability and maintainability.
           </p>
@@ -58,10 +64,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-5">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">REACTJS</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            ReactJs
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             React.js is a JavaScript library for building user interfaces,
             providing a declarative and component-based approach.
           </p>
@@ -69,10 +77,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-6">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">NEXTJS</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Nextjs
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Next.js is a React framework that simplifies and accelerates the
             development of scalable and server-side-rendered React applications.
           </p>
@@ -80,10 +90,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-7">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">ASTRO</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Astro
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Astro is a modern static site generator that prioritizes speed and
             performance. It utilizes a buildless approach, leading to faster
             page loads by shipping only necessary code to the browser. Astro
@@ -93,10 +105,10 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-8">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">GIT</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">Git</h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Git is a distributed version control system that tracks changes in
             source code during software development.
           </p>
@@ -104,10 +116,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-9">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">TAILWINDCSS</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            TailwindCSS
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Tailwind CSS is a utility-first CSS framework that simplifies
             styling by providing a set of pre-designed utility classes.
           </p>
@@ -115,10 +129,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-10">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">FIGMA</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Figma
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Figma is a collaborative design and prototyping tool operating in
             the cloud. It facilitates real-time collaboration among designers
             and teams, allowing the creation, sharing, and iteration of designs.
@@ -127,10 +143,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-11">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">REDUX</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Redux
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Redux is a JavaScript state management library commonly used with
             React, providing a predictable state container.
           </p>
@@ -138,10 +156,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-12">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">ZUSTAND</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Zustand
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Zustand is a minimalist React state management library, offering a
             concise API for efficient state handling in React components,
             emphasizing simplicity and reduced boilerplate.
@@ -150,12 +170,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-13">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">
-            REACT NATIVE
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            React Native
           </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             React Native is a JavaScript framework for building cross-platform
             mobile applications, offering a single codebase for iOS and Android.
           </p>
@@ -163,12 +183,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-14">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">
-            FRAMER MOTION
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Framer Motion
           </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Framer Motion is a React animation library known for its simplicity
             and power, enabling developers to create smooth and interactive
             animations with a declarative syntax, enhancing the user interface
@@ -178,10 +198,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-15">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">GSAP</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Gsap
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             GSAP is a robust JavaScript animation library known for its ease of
             use and versatility, empowering developers to create smooth and
             sophisticated animations for web applications with a focus on
@@ -191,10 +213,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-16">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">PYTHON</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Python
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Python is a versatile, high-level programming language known for its
             readability and simplicity, widely used across various domains,
             including web development, data science, and artificial
@@ -204,10 +228,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-17">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">DJANGO</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Django
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Django is a high-level Python web framework emphasizing rapid
             development and clean, pragmatic design, offering built-in features
             for efficient web application development.
@@ -217,10 +243,12 @@ const AccordionTabs = () => {
 
       <AccordionItem value="item-18">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">RUST</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Rust
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Rust is a systems programming language known for its emphasis on
             safety and performance, making it ideal for building reliable and
             efficient software in areas like systems development and embedded
@@ -231,10 +259,12 @@ const AccordionTabs = () => {
       </AccordionItem>
       <AccordionItem value="item-19">
         <AccordionTrigger>
-          <h3 className="text-2xl lg:text-4xl text-yellowColor">GO/GOLANG</h3>
+          <h3 className="text-2xl text-yellowColor font-bold uppercase">
+            Go/Golang
+          </h3>
         </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-lg lg:text-xl">
+        <AccordionContent className="text-xl">
+          <p>
             Go is a statically-typed language prized for its simplicity and
             efficiency, particularly well-suited for concurrent programming and
             building scalable backend services and distributed systems.
