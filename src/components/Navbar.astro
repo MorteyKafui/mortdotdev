@@ -23,7 +23,7 @@ export const menuItems = [
     <ul class="lg:flex gap-10 hidden">
       {
         menuItems.map(({ label, url }) => (
-          <li class=" hover:text-yellowColor transition-all duration-500 hover:scale-105">
+          <li class=" hover:text-yellowColor transition-all duration-500 hover:scale-105 font-semibold">
             <a href={url}>{label}</a>
           </li>
         ))
@@ -35,8 +35,8 @@ export const menuItems = [
   </div>
 </nav>
 
-<style>
-  h1 {
-    font-family: "Pacifico", cursive;
+<style is:global>
+  nav h1 a {
+    font-family: "Protest Guerrilla", sans-serif;
   }
 </style>

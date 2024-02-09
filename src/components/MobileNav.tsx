@@ -16,7 +16,7 @@ const MobileNav = () => {
         <AlignRight size={40} className="cursor-pointer" />
       </SheetTrigger>
       <SheetContent className="bg-darkColorPrimary border-l-2 border-yellowColor">
-        <ul className="flex flex-col justify-center items-center gap-10 h-[100vh] text-3xl text-lightColor ">
+        <ul className="flex flex-col justify-center items-center gap-10 h-[100vh] text-3xl text-lightColor font-bold">
           {menuItems.map(({ label, url }) => (
             <li
               className="hover:text-yellowColor transition-all duration-500 hover:scale-105"

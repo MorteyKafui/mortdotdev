@@ -75,8 +75,6 @@
   }
 }
 
-/* font-family: 'Bubblegum Sans', sans-serif;
-font-family: 'Pacifico', cursive; */
 .text-gradient {
   background: linear-gradient(-265deg, #f1b90c 40%, #cf5c36 60%);
   background-clip: text;
@@ -89,35 +87,65 @@ font-family: 'Pacifico', cursive; */
   background: linear-gradient(-258deg, #f4c520 33.53%, #cf5c36 58.62%);
 }
 
-.img-styles {
-  border-radius: 1.25rem;
-  border: 10px solid #ffb514;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-  box-shadow: 46px 20px 5.6px 8px rgba(0, 0, 0, 0.25);
-}
-
 html {
   scroll-behavior: smooth;
-}
-
-body {
   --sb-track-color: #232e33;
   --sb-thumb-color: #f4c520;
-  --sb-size: 10px;
-
+  --sb-size: 15px;
   scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 }
 
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
   width: var(--sb-size);
 }
 
-body::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track {
   background: var(--sb-track-color);
   border-radius: 10px;
 }
 
-body::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 10px;
+  border: 5px solid #232e33;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+@font-face {
+  font-family: "Chubbo-Regular";
+  src: url("/fonts/Chubbo-Regular.woff2") format("woff2"),
+    url("/fonts/Chubbo-Regular.woff") format("woff"),
+    url("/fonts/Chubbo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chubbo-Medium";
+  src: url("/fonts/Chubbo-Medium.woff2") format("woff2"),
+    url("/fonts/Chubbo-Medium.woff") format("woff"),
+    url("/fonts/Chubbo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chubbo-Bold";
+  src: url("/fonts/Chubbo-Bold.woff2") format("woff2"),
+    url("/fonts/Chubbo-Bold.woff") format("woff"),
+    url("/fonts/Chubbo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: "Chubbo-Regular";
 }
