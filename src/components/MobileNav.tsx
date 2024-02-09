@@ -19,7 +19,7 @@ const MobileNav = () => {
         <ul className="flex flex-col justify-center items-center gap-10 h-[100vh] text-3xl text-lightColor ">
           {menuItems.map(({ label, url }) => (
             <li
-              className="hover:text-yellowColor transition-all duration-500 hover:scale-125"
+              className="hover:text-yellowColor transition-all duration-500 hover:scale-105"
               key={label}
             >
               <a href={url}>{label}</a>
