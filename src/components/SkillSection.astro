@@ -90,9 +90,9 @@ import AccordionTabs from "./AccordionTabs";
   const tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".article",
-      toggleActions: "play none play reverse",
+      toggleActions: "play reverse play reverse",
     },
-    defaults: { duration: 1, ease: "elastic", yoyo: true },
+    defaults: { duration: 1, ease: "bounce.inOut", yoyo: true },
   });
 
   tl2.fromTo(
